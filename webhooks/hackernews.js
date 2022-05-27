@@ -17,13 +17,13 @@ async function postHackerNewsMsg() {
       },
     },
     elements: [
-      {
-        tag: "div",
-        text: {
-          content: "  ⚫️ **Hacker News**",
-          tag: "lark_md",
-        },
-      },
+      // {
+      //   tag: "div",
+      //   text: {
+      //     content: "  ⚫️ **Hacker News**",
+      //     tag: "lark_md",
+      //   },
+      // },
       ...news.map((item, index) => ({
         tag: "div",
         text: {

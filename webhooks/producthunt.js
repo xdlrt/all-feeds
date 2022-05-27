@@ -16,13 +16,13 @@ async function postProductHuntMsg() {
       },
     },
     elements: [
-      {
-        tag: "div",
-        text: {
-          content: "  🟠 **Product Hunt**",
-          tag: "lark_md",
-        },
-      },
+      // {
+      //   tag: "div",
+      //   text: {
+      //     content: "  🟠 **Product Hunt**",
+      //     tag: "lark_md",
+      //   },
+      // },
       ...products.map((item, index) => ({
         tag: "div",
         text: {
