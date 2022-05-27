@@ -1,5 +1,5 @@
 const axios = require("axios");
-const fetchProductHunt = require("./utils/producthunt");
+const fetchProductHunt = require("../utils/producthunt");
 const LARK_HOOK_URL = process.env.LARK_HOOK_URL;
 
 async function postProductHuntMsg() {

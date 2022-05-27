@@ -1,5 +1,5 @@
 const axios = require("axios");
-const fetchHackerNews = require("./utils/hackernews");
+const fetchHackerNews = require("../utils/hackernews");
 const LARK_HOOK_URL = process.env.LARK_HOOK_URL;
 
 async function postHackerNewsMsg() {
