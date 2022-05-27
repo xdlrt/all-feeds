@@ -43,8 +43,8 @@ jobs:
       
       - name: Send hackernews Push
         run: |
-          node webhooks/producthunt.js
+          PH_ACCESS_TOKEN='${{ secrets.PH_ACCESS_TOKEN }}'  LARK_HOOK_URL='${{ secrets.LARK_HOOK_URL }}' node webhooks/producthunt.js
 
       - name: Send producthunt Push
         run: |
-          node webhooks/hackernews.js
+          PH_ACCESS_TOKEN='${{ secrets.PH_ACCESS_TOKEN }}'  LARK_HOOK_URL='${{ secrets.LARK_HOOK_URL }}' node webhooks/hackernews.js
